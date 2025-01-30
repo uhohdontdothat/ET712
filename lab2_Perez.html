@@ -88,8 +88,35 @@
 
         }
 
-        console.log('\n------ EXERCISE ------')
-        
+        console.log('\n------ EXERCISE 1 ------')
+        input = prompt("Please enter a value: ")
+        let checkuserinput = isNaN(parseInt(input))
+        if(input>=0){
+            console.log(`${input} is a positive number`)
+        }
+        else if(input<0){
+            console.log(`${input} is a negative number`)
+        }
+        else if(checkuserinput===true){
+            console.log(`${input} is a string`)
+        }
+        console.log('\n------ EXERCISE 2 ------')
+        input2 = prompt("Please select a color from the list by inputting the matching character!: Blue = B, Red = R, Yellow = Y, G = Green.")
+        if(input2==="B"){
+            console.log("You selected the color blue!")
+        }
+        else if(input2==="R"){
+            console.log("You selected the color red!")
+        }
+        else if(input2==="Y"){
+            console.log("You selected the color yellow!")   
+        }
+        else if(input2==="G"){
+            console.log("You selected the color green!")
+        }   
+        else{
+            console.log("Your color is not on the list!")
+        }
     </script>
 </body>
 </html>
