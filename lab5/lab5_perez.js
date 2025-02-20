@@ -111,6 +111,9 @@ const mycalculator ={
         return Math.pow(side,3)
     }
 }
+// calling the methods
+console.log(mycalculator.area_square(5))
+console.log(mycalculator.volume_cube(3))
 
 console.log("\n------ Exercise 2 ------")
 function divideNumbers(num1,num2){
