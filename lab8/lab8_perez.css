@@ -81,3 +81,13 @@ img{width: 100%; display: block;}
 .info{
     padding: 1em;
 }
+
+/* Exercise */
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
