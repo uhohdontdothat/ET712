@@ -63,3 +63,17 @@ linkreadmore.addEventListener("click",function(){
 closex.addEventListener("click",function(){
     modalwindow.style.display = "none"
 })
+/**
+ * Exercise
+ */
+let circle = document.querySelector(".circle")
+let btnreset = document.querySelector(".btnreset")
+let count = document.querySelector(".count")
+let i = 0
+circle.addEventListener("click",function(){
+    i++
+    count.innerHTML = i
+})
+btnreset.addEventListener("click",function(){
+        count.innerHTML = 0
+})
