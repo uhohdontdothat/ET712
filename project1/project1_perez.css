@@ -3,3 +3,185 @@
     height: 200px;
     width: 200px;
 }
+.shapename{
+    color: red;
+    font-weight: bolder;
+}
+.shapecontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.square{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+.triangle{
+    height: 0;
+    width: 0;
+    border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid yellow;
+}
+.trapezoid{
+    border-bottom: 200px solid green;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 150px;
+    height: 0;
+}
+
+.animals{
+    display: flex;
+}
+.cardlion{
+    height:300px;
+    width:30%;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:1% 2%;
+}
+.cardpeacock{
+    height:300px;
+    width:30%;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:1% 2%;
+}
+.cardpenguin{
+    height:300px;
+    width:30%;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:1% 2%;
+}
+.cardshark{
+    height:300px;
+    width:30%;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:1% 2%;
+}
+
+.popuplion{
+    background-color: rgba(50,50,50,0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+.popuppeacock{
+    background-color: rgba(50,50,50,0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+.popuppenguin{
+    background-color: rgba(50,50,50,0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+
+.popupshark{
+    background-color: rgba(50,50,50,0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+.contentheader{
+    background-color: lightgray;
+    display: flex;
+    padding: 0.5em;
+
+}
+.lioncontent{
+    height: 70%;
+    width: 60%;
+    margin: 5% auto;
+    background-color: white;
+}
+.peacockcontent{
+    height: 70%;
+    width: 60%;
+    margin: 5% auto;
+    background-color: white;
+}
+.penguincontent{
+    height: 70%;
+    width: 60%;
+    margin: 5% auto;
+    background-color: white;
+}
+.sharkcontent{
+    height: 70%;
+    width: 60%;
+    margin: 5% auto;
+    background-color: white;
+}
+.closex1{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    font-size: 2em;
+    text-align: center;
+}.closex2{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    font-size: 2em;
+    text-align: center;
+}.closex3{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    font-size: 2em;
+    text-align: center;
+}.closex4{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    font-size: 2em;
+    text-align: center;
+}
+.closex1:hover{
+    color: crimson;
+    transform: translateY(2);
+}
+.closex2:hover{
+    color: crimson;
+    transform: translateY(2);
+}
+.closex3:hover{
+    color: crimson;
+    transform: translateY(2);
+}
+.closex4:hover{
+    color: crimson;
+    transform: translateY(2);
+}
