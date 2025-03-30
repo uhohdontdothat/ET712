@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-K Learning</title>
+    <link rel="stylesheet" href="project1_perez.css">
+
+</head>
+<body class="body">
+    <header class="header">
+        <div class="imgcontainer">
+            <img class="headerimg" src="images/fluffy_teach.png" width="125" height="125"><img class="headerimg" src="images/pre_k_learning.png" width="250" height="125">
+        </div>
+        <p class="ptext">Welcome to this interactive website to assist Pre-K students identify colors, differenciate shapes, count to 10, and learn fascinating facts about various animals! This is achieved by using various games and click-to-play activities that students can easily interact with, along with the assistance of a teacher or parent/guardian! Happy Learning! </p>
+    </header>
+    <!-- for colors, maybe they can type in the color it is? For shapes they click the shape that matches the name that appears.
+    For counting, possibly make it a game where they pick from a list of numbers that pick them in order? For animals, click on an animal that will open a pop up window.-->
+    <section class="learnthing">
+        <div class="title">
+            <img src="images/fluffy_colors.png" width="75" height="75"> <h2>Learn the Colors!</h2> <img src="images/fluffy_colors.png" width="75" height="75">
+        </div>
+        <p class="description">Please type the color you see in the text box below!</p>
+        <div id="color"></div>
+        <div class="submission">
+            <input type="colorinput" id="colorinput" name="colorinput" placeholder="Enter the color here!...">
+            <button onclick="checkcolor()" class="btnsubmit">SUBMIT</button>
+        </div>
+    </section>
+
+    <section class="learnthing">
+        <div class="title">
+            <img src="images/fluffy_shapes.png" width="75" height="75"><h2>Identify Shapes!</h2><img src="images/fluffy_shapes.png" width="75" height="75">
+        </div>
+        <p class="description"> Please click on the <span class="shapename">shape</span>.</p>
+        <div class="shapecontainer">
+            <div class="circle"></div>
+            <div class="square"></div>
+            <div class="triangle"></div>
+            <div class="trapezoid"></div>
+        </div>
+    </section>
+
+    <section class="learnthing">
+        <div class="title">
+            <img src="images/fluffy_count.png" width="75" height="75"><h2>Count to 10!</h2><img src="images/fluffy_count.png" width="75" height="75">
+        </div>
+        <div>
+            <p class="description">Please press the buttons to put the numbers in order!</p>
+            <p class="numbers">Numbers: <span class="newnumbers"></span></p>
+        </div>
+        <div class="numberbuttons">
+            <button class="btn1">1</button> <button class="btn3">3</button> <button class="btn2">2</button> <button class="btn5">5</button> <button class="btn4">4</button>
+            <button class="btn6">6</button> <button class="btn7">7</button> <button class="btn10">10</button> <button class="btn9">9</button> <button class="btn8">8</button> 
+        </div>
+        <div class="eventbuttons">
+            <button class="checknumber">CHECK NUMBERS</button>
+            <button class="clearinput">CLEAR</button>
+        </div>
+
+    </section>
+    
+    <section class="learnthing">
+        <div class="title">
+            <img src="images/fluffy_animals.png" width="75" height="75"> <h2>Read about Animals!</h2> <img src="images/fluffy_animals.png" width="75" height="75">
+        </div>
+        <!-- ADD AN IMAGE AND TEXT -->
+        <section class="animals">
+            <div class="cardlion">
+                <p class="animal">Lion</p>
+                <img src="images/lion_card.jpg" width="250" height="250">
+            </div>
+
+            <div class="cardpeacock">
+                <p class="animal">Peacock</p>
+                <img src="images/peacock_card.jpg" width="250" height="250">
+            </div> 
+
+            <div class="cardpenguin">
+                <p class="animal">Penguin</p>
+                <img src="images/penguin_card.jpg" width="250" height="250">
+            </div>
+
+            <div class="cardshark">
+                <p class="animal">Shark</p>
+                <img src="images/shark_card.jpg" width="250" height="250">
+            </div>
+
+        </section>
+    </section>
+    <!-- PUT INFORMATION IN THESE AND AN IMAGE -->
+    <section class="popuplion">
+        <div class="lioncontent">
+            <header class="contentheader">
+                <h3>LION</h3>
+                <img class="imgread" src="images/fluffy_read.png" height="75" width="75"><p class="advise">Adults, Please read this to the child!</p><a class="closex1">X</a>
+            </header>
+            <main class="cardcontent">
+                <img src="images/lion_content.jpg" height="200" width="350">
+                <p>A lion is a big, strong cat that lives in Africa and some parts of India. Boy lions have fluffy manes around their heads, but girl lions don’t. They live in families called prides and work together to hunt for food. Lions roar really loud—you can hear them from miles away! They love to nap and can sleep for up to 20 hours a day. Even though they are called the "king of the jungle," lions actually live in open grasslands, not jungles!</p>
+            </main>
+        </div>         
+    </section>
+
+    <section class="popuppeacock">
+        <div class="peacockcontent">
+            <header class="contentheader">
+                <h3>PEACOCK</h3>
+                <img class="imgread" src="images/fluffy_read.png" height="75" width="75"><p class="advise">Adults, Please read this to the child!</p><a class="closex2">X</a>
+            </header>
+            <main class="cardcontent">
+                <img src="images/peacock_content.jpg" height="200" width="250">
+                <p>A peacock is a beautiful bird with big, colorful feathers. Only boy peacocks have the long, shiny tail, and they spread it out to show off! Girl peacocks are called peahens, and they have shorter, brownish feathers. Peacocks make loud calls that sound like "meow!" even though they aren’t cats. They can fly, but only for short distances, like up into trees. Their feathers don’t help them fly, but they sure make them look fancy!</p>
+            </main>
+        </div>         
+    </section>
+
+    <section class="popuppenguin">
+        <div class="penguincontent">
+            <header class="contentheader">
+                <h3>PENGUIN</h3> 
+                <img class="imgread" src="images/fluffy_read.png" height="75" width="75"><p class="advise">Adults, Please read this to the child!</p><a class="closex3">X</a>
+            </header>
+            <main class="cardcontent">
+                <img src="images/penguin_content.webp" height="200" width="250">
+                <p>A penguin is a bird, but it can’t fly in the sky. Instead, it swims really fast in the water using its wings like flippers! Some penguins live in super cold places like Antarctica, but other penguins live in warm places. Penguins love to slide on their bellies on the ice—it’s like they’re playing! Baby penguins, called chicks, have soft, fuzzy feathers to keep them warm. Some penguin dads even help keep the eggs warm by balancing them on their feet!</p>
+            </main>
+        </div>         
+    </section>
+
+    <section class="popupshark">
+        <div class="sharkcontent">
+            <header class="contentheader">
+                <h3>SHARK</h3>
+                <img class="imgread" src="images/fluffy_read.png" height="75" width="75"><p class="advise">Adults, Please read this to the child!</p><a class="closex4">X</a>
+            </header>
+            <main class="cardcontent">
+                <img src="images/shark_content.webp" height="200" width="300">
+                <p>A shark is a big fish that lives in the ocean. It has lots of sharp teeth to help it catch its food. Sharks have strong bodies, but they don’t have bones like people do—they have something soft inside that helps them swim fast. Some sharks, like the great white, are very big, while others, like the dogfish, are smaller. Sharks never really sleep; they rest one part of their brain while still swimming. Even though sharks look scary, most of them are not dangerous to people!</p>
+            </main>
+        </div>         
+    </section>
+
+    <section class="popupcorrect">
+        <div class="contentcorrect">
+            <img src="images/fluffy_correct.png" height="300" width="300">
+            <p>You got it!</p>
+        </div>
+    </section>
+
+    <section class="popupwrong">
+        <div class="contentwrong">
+            <img src="images/fluffy_not_quite.png" height="300" width="300">
+            <p>Not quite right...</p>
+        </div>
+    </section>
+
+    <footer class="footer"></footer> <!-- dont forget to actually make this footer lol -->
+    <script src="project1_perez.js"></script>
+</body>
+</html>
