@@ -29,8 +29,6 @@ function randcolor(){
     lastcolor = randnum
 }
 
-// make it so the same color doesnt appear back to back, its a bit annoying and confusing!
-
 window.addEventListener("load",randcolor())
 
 function checkcolor(){
@@ -145,7 +143,7 @@ let btn10 = document.querySelector(".btn10")
 let newnumbers = document.querySelector(".newnumbers")
 let checknumber = document.querySelector(".checknumber")
 let clearinput = document.querySelector(".clearinput")
-// im not gonna lie, this code is EXTREMELY ugly but has no bugs
+
 btn1.addEventListener("click",function(){
     newnumbers.innerHTML += "1, "
 })
