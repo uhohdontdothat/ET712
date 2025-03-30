@@ -2,31 +2,31 @@ console.log("henry perez")
 
 let colordisplay = document.querySelector("#color")
 let shapename = document.querySelector(".shapename")
+let popupcorrect = document.querySelector(".popupcorrect")
+let popupwrong = document.querySelector(".popupwrong")
 
+let lastcolor = 100
 function randcolor(){
-    let lastcolor = 100
-    randnum = Math.floor(Math.random()*5)
-    while(lastcolor!==randnum){
+    let randnum = Math.floor(Math.random()*5)
+    while(lastcolor===randnum){
+        randnum = Math.floor(Math.random()*5)
+    }
     if(randnum===0){
         colordisplay.style.backgroundColor = "red"
-        lastcolor = 0
     }
     else if(randnum===1){
         colordisplay.style.backgroundColor = "orange"
-        lastcolor = 1
     }
     else if(randnum===2){
         colordisplay.style.backgroundColor = "yellow"
-        lastcolor = 2
     }
     else if(randnum===3){
         colordisplay.style.backgroundColor = "green"
-        lastcolor = 3
     }
     else if(randnum===4){
         colordisplay.style.backgroundColor = "blue"
-        lastcolor = 4
-    }}
+    }
+    lastcolor = randnum
 }
 
 // make it so the same color doesnt appear back to back, its a bit annoying and confusing!
@@ -40,17 +40,23 @@ function checkcolor(){
 
     if(input===colordisplayed){
         console.log("right color!")
-        color.style.backgroundColor = randcolor() 
+        color.style.backgroundColor = randcolor()
+        popupcorrect.style.display = "flex" 
         colorinput = ""
     }
     else{
         console.log("wrong color...")
+        popupwrong.style.display = "flex"
     }
 
 }
 
+let lastshape = 100
 function loadshape(){
-    randshape = Math.floor(Math.random()*4)
+    let randshape = Math.floor(Math.random()*4)
+    while(lastshape===randshape){
+        randshape = Math.floor(Math.random()*4)
+    }
     if(randshape===0){
         shapename.innerHTML = "CIRCLE"
     }
@@ -63,6 +69,7 @@ function loadshape(){
     else if(randshape===3){
         shapename.innerHTML = "TRAPEZOID"
     }
+    lastshape = randshape
 }
 
 window.addEventListener("load",loadshape())
@@ -74,37 +81,53 @@ let trapezoid = document.querySelector(".trapezoid")
 triangle.addEventListener("click",function(){
     if(shapename.innerHTML==="TRIANGLE"){
         console.log("Awesome, you clicked the triangle!")
+        popupcorrect.style.display = "flex"
         shapename.classname = loadshape()
     }
     else{
         console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
     }
 })
+
+popupcorrect.addEventListener("click",function(){
+    popupcorrect.style.display = "none"
+})
+popupwrong.addEventListener("click", function(){
+    popupwrong.style.display = "none"
+})
+
 square.addEventListener("click",function(){
     if(shapename.innerHTML==="SQUARE"){
         console.log("Awesome, you clicked the square!")
+        popupcorrect.style.display = "flex"
         shapename.classname = loadshape()
     }
     else{
         console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
     }
 })
 circle.addEventListener("click",function(){
     if(shapename.innerHTML==="CIRCLE"){
         console.log("Awesome, you clicked the circle!")
+        popupcorrect.style.display = "flex"
         shapename.classname = loadshape()
     }
     else{
         console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
     }
 })
 trapezoid.addEventListener("click",function(){
     if(shapename.innerHTML==="TRAPEZOID"){
         console.log("Awesome, you clicked the trapezoid!")
+        popupcorrect.style.display = "flex"
         shapename.classname = loadshape()
     }
     else{
         console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
     }
 })
 
@@ -121,6 +144,7 @@ let btn9 = document.querySelector(".btn9")
 let btn10 = document.querySelector(".btn10")
 let newnumbers = document.querySelector(".newnumbers")
 let checknumber = document.querySelector(".checknumber")
+let clearinput = document.querySelector(".clearinput")
 // im not gonna lie, this code is EXTREMELY ugly but has no bugs
 btn1.addEventListener("click",function(){
     newnumbers.innerHTML += "1, "
@@ -155,14 +179,18 @@ btn10.addEventListener("click",function(){
 checknumber.addEventListener("click",function(){
     if(newnumbers.innerHTML === "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "){
         console.log("Wow you know how to count!")
+        popupcorrect.style.display = "flex"
         newnumbers.innerHTML = ""
     }
     else{
         console.log("Is the code right or you really dont know how to count?")
+        popupwrong.style.display = "flex"
         newnumbers.innerHTML = ""
     }
 })
-
+clearinput.addEventListener("click", function(){
+    newnumbers.innerHTML = ""
+})
 // THIS CODE IS UGLY LOL
 let popuplion = document.querySelector(".popuplion")
 let popuppeacock = document.querySelector(".popuppeacock")
