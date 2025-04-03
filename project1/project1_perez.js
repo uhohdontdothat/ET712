@@ -7,9 +7,9 @@ let popupwrong = document.querySelector(".popupwrong")
 
 let lastcolor = 100
 function randcolor(){
-    let randnum = Math.floor(Math.random()*5)
+    let randnum = Math.floor(Math.random()*10)
     while(lastcolor===randnum){
-        randnum = Math.floor(Math.random()*5)
+        randnum = Math.floor(Math.random()*10)
     }
     if(randnum===0){
         colordisplay.style.backgroundColor = "red"
@@ -25,6 +25,21 @@ function randcolor(){
     }
     else if(randnum===4){
         colordisplay.style.backgroundColor = "blue"
+    }
+    else if(randnum===5){
+        colordisplay.style.backgroundColor = "black"
+    }
+    else if(randnum===6){
+        colordisplay.style.backgroundColor = "white"
+    }
+    else if(randnum===7){
+        colordisplay.style.backgroundColor = "grey"
+    }
+    else if(randnum===8){
+        colordisplay.style.backgroundColor = "brown"
+    }
+    else if(randnum===9){
+        colordisplay.style.backgroundColor = "pink"
     }
     lastcolor = randnum
 }
@@ -51,9 +66,9 @@ function checkcolor(){
 
 let lastshape = 100
 function loadshape(){
-    let randshape = Math.floor(Math.random()*4)
+    let randshape = Math.floor(Math.random()*10)
     while(lastshape===randshape){
-        randshape = Math.floor(Math.random()*4)
+        randshape = Math.floor(Math.random()*10)
     }
     if(randshape===0){
         shapename.innerHTML = "CIRCLE"
@@ -67,6 +82,24 @@ function loadshape(){
     else if(randshape===3){
         shapename.innerHTML = "TRAPEZOID"
     }
+    else if(randshape===4){
+        shapename.innerHTML = "DIAMOND"
+    }
+    else if(randshape===5){
+        shapename.innerHTML = "HEART"
+    }
+    else if(randshape===6){
+        shapename.innerHTML = "STAR"
+    }
+    else if(randshape===7){
+        shapename.innerHTML = "HEXAGON"
+    }
+    else if(randshape===8){
+        shapename.innerHTML = "CLOUD"
+    }
+    else if(randshape===9){
+        shapename.innerHTML = "HALF-CIRCLE"
+    }
     lastshape = randshape
 }
 
@@ -75,6 +108,13 @@ let triangle = document.querySelector(".triangle")
 let square = document.querySelector(".square")
 let circle = document.querySelector(".circle")
 let trapezoid = document.querySelector(".trapezoid")
+let diamond = document.querySelector(".diamond")
+let heart = document.querySelector(".heart")
+let star = document.querySelector(".star")
+let hexagon = document.querySelector(".hexagon")
+let cloud = document.querySelector(".cloud")
+let halfcircle = document.querySelector(".halfcircle")
+
 
 triangle.addEventListener("click",function(){
     if(shapename.innerHTML==="TRIANGLE"){
@@ -120,6 +160,72 @@ circle.addEventListener("click",function(){
 trapezoid.addEventListener("click",function(){
     if(shapename.innerHTML==="TRAPEZOID"){
         console.log("Awesome, you clicked the trapezoid!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+diamond.addEventListener("click",function(){
+    if(shapename.innerHTML==="DIAMOND"){
+        console.log("Awesome, you clicked the diamond!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+heart.addEventListener("click",function(){
+    if(shapename.innerHTML==="HEART"){
+        console.log("Awesome, you clicked the heart!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+star.addEventListener("click",function(){
+    if(shapename.innerHTML==="STAR"){
+        console.log("Awesome, you clicked the star!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+hexagon.addEventListener("click",function(){
+    if(shapename.innerHTML==="HEXAGON"){
+        console.log("Awesome, you clicked the hexagon!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+cloud.addEventListener("click",function(){
+    if(shapename.innerHTML==="CLOUD"){
+        console.log("Awesome, you clicked the cloud!")
+        popupcorrect.style.display = "flex"
+        shapename.classname = loadshape()
+    }
+    else{
+        console.log("Wrong shape!")
+        popupwrong.style.display = "flex"
+    }
+})
+halfcircle.addEventListener("click",function(){
+    if(shapename.innerHTML==="HALF-CIRCLE"){
+        console.log("Awesome, you clicked the half-circle!")
         popupcorrect.style.display = "flex"
         shapename.classname = loadshape()
     }
