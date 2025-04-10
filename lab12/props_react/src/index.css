@@ -13,7 +13,6 @@ img{width: 100%; display: block;}
 /* card */
 .card{
   width: 300px;
-  box-shadow: 2px 2px 5px gray;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
@@ -34,14 +33,81 @@ img{width: 100%; display: block;}
   font-size: 0.8em;
 }
 
-.card:hover{
-  box-shadow: none;
-  border: solid 2px gray
-}
-
 /* App.js */
 .maincontainer{
   display: flex;
   justify-content: center;
 }
+/* feedback.js */
+.feedbackcontainer{
+  width: 300px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+  margin: 2%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 
+}
+.content{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.description{
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+.cardfooter{
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 2rem;
+}
+.feedbackcontainer:hover{
+  box-shadow: none;
+  border: solid 2px gray
+}
+/* modalwindow.js */
+.modalwindow{
+  background: rgba(50,50,50,0.6);
+  position:fixed;
+  inset: 0% 0% 0% 0%;
+  display: none;
+}
+.modalcontent{
+  background-color: white;
+  width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+.modalheader{
+  display: flex;
+  text-align: center;
+  color: darkblue;
+}
+.modalheader p:nth-child(1){width: 92%}
+.commentarea{width:90%; height: 3rem;}
+.btnpostfeedback{
+  width: 90%;
+  background-color: darkblue;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.btnpostfeedback:hover, .closemodal:hover{
+  background-color: crimson;
+  font-weight: bolder;
+  cursor: pointer
+}
+
+/* Post Comments */
+.postcomment{
+  display: block;
+  width: 1200px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: rgba(20,20,20,0.5);
+}
