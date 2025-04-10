@@ -6,7 +6,7 @@ const User_feedback = function(props){
     // open modal window
     const openmodalwinow = function(){
         const modalwindow = document.querySelector(".modalwindow")
-        modalwindow.style.display = "block"
+        modalwindow.style.display = "block";
     }
 
     return(

@@ -12,10 +12,11 @@ const Modalwindow = function(props){
     const collectcomment = function(){
         let commentarea = document.querySelector(".commentarea")
         const commentlist = document.querySelector(".commentlist")
-        commentlist.innerHTML += `<li>${props.usercomment} - ${commentarea.value}</li>`
+        commentlist.innerHTML += `<li>${props.usercomment} - 
+        ${commentarea.value}</li>`
         const modalwindow = document.querySelector(".modalwindow")
-        modalwindow.display.style = "none";
-        commentarea.value = ""
+        modalwindow.style.display = "none";
+        commentarea.value = "";
     }
 
     return(

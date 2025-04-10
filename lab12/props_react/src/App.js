@@ -21,7 +21,7 @@ function App() {
       </main>
       {/* Post Comments */}
       <div className="postcomment">
-        <ul classname="commentlist"> </ul>
+        <ul className="commentlist"></ul>
       </div>
 
     </>
