@@ -40,18 +40,21 @@ function App() {
 
   return (
     <>
-      <h1>Lab 14, React State</h1>
-      <p>Count = {count}</p>
-      <button onClick={()=>setCount(count+1)}>Increment the count</button>
-      <button onClick={()=>setCount(0)}>Reset the count</button>
+      <h1 className='header'>Lab 14, React State</h1>
+      <p className='count'>Count = {count}</p>
+      <section className='buttons'>
+        <button className='counteradd' onClick={()=>setCount(count+1)}>Increment the count</button>
+        <button className='counterreset' onClick={()=>setCount(0)}>Reset the count</button>
+      </section>
 
-      <h1>Form application using states</h1>
+      <h1 className='header'>Form application using states</h1>
       <form onSubmit={submitform}>
-        <fieldset>
-          <legend>Forms in ReactJS</legend>
+        <fieldset className='box'>
+          <legend className='form'>Forms in ReactJS</legend>
           <section>
             <label for='username'>Enter your name: </label>
-            <input 
+            <input
+              className='inputbox' 
               type='text' 
               id='username'
               name = 'username'
@@ -62,6 +65,7 @@ function App() {
           <section>
             <label for='luckynumber'>Enter a lucky number: </label>
             <input
+              className='inputbox' 
               type='number'
               id='luckynumber'
               name='luckynumber'
@@ -73,29 +77,32 @@ function App() {
           <section>
             <label for='textcomment'>Any suggestions?</label>
             <textarea
+              className='inputbox' 
               id='textcomment'
               value={textcomment}
               onChange={submitted_comments}
             />
           </section>
           <section>
-            <select value={mygender} onChange={collectedgender}>
-              <option value='female'>Female</option>
-              <option value='male'>Male</option>
-              <option value='others'>Others</option>
+            <select className='dropdown' value={mygender} onChange={collectedgender}>
+              <option className='option' value='female'>Female</option>
+              <option className='option' value='male'>Male</option>
+              <option className='option' value='others'>Others</option>
             </select>
           </section>
           
           
           {/* Submit Form */}
-          <input type='submit'/>
+          <input className='submitbutton' type='submit'/>
         </fieldset>
       </form>
       {/* Test Data in the form after Submission */}
-      <p>Name = {inputs.username}</p>
-      <p>Lucky Number = {inputs.luckynumber}</p>
-      <p>Comments = {textcomment}</p>
-      <p>Gender = {mygender}</p>
+      <section className='testarea'>
+        <p>Name = {inputs.username}</p>
+        <p>Lucky Number = {inputs.luckynumber}</p>
+        <p>Comments = {textcomment}</p>
+        <p>Gender = {mygender}</p>
+      </section>
     </>
   );
 }

@@ -1,38 +1,87 @@
-.App {
+.header{
+  color: darkblue;
   text-align: center;
+  font-size: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.count{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.buttons{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.counteradd{
+  padding:15px;
+  font-size: 15px;
+  margin: 10px;
+  border: none;
+  color: lightgreen;
+  background-color: darkgreen;
+  border-radius: 5%;
+  
+}
+.counterreset{
+  padding:15px;
+  font-size: 15px;
+  margin: 10px;
+  border: none;
+  color: lightcoral;
+  background-color: Red;
+  border-radius: 5%;
+}
+
+.counterreset:hover, .counteradd:hover, .dropdown:hover,.submitbutton:hover{
   color: white;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.form{
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+}
+.inputbox{
+  padding: 10px;
+  margin: 15px;
+  font-size: 15px;
+  display: inline-flex;
+  box-sizing: border-box;
+  text-align: justify;
+}
+textarea.inputbox {
+  min-height: 30px;
+  max-height: 150px;
+  font-size: 15px;
+  resize: vertical;
+}
+.dropdown{
+  padding: 10px;
+  margin: 15px;
+  font-size: 20px;
+  color: lightblue;
+  background-color: darkblue;
+  border-radius: 5%;
+}
+.option{
+  background-color: beige;
+  color: black;
+}
+.submitbutton{
+  border: none;
+  color: lightgreen;
+  background-color: green;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+.testarea{
+  text-align: center;
+  font-size: 15px;
+  padding: 2px;
+  font-weight: bolder;
 }
