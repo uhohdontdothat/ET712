@@ -10,6 +10,8 @@ import CPU from './categories/cpu';
 import GPU from './categories/gpu';
 import Motherboard from './categories/motherboard';
 import Peripheral from './categories/peripheral';
+import About from './about';
+import Cart from './cart';
 
 // reference lab13 if there are issues
 
@@ -27,6 +29,9 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          
           <Route path='/categories/cpu' element={<CPU/>}/>
           <Route path='/categories/gpu' element={<GPU/>}/>
           <Route path='/categories/motherboard' element={<Motherboard/>}/>

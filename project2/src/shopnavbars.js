@@ -5,13 +5,13 @@ import'./App.css';
 const Shopnavbars = function(){
     return(
         <>
-         <nav className='navheader'>
+         <nav className='shopnavheader'>
             <section className='iconlink'></section>
-                <section className='navlinks'>
-                    <button className='tablink'><Link to="/cpu">CPUs</Link></button>
-                    <button className='tablink'><Link to="/gpu">GPUs</Link></button>
-                    <button className='tablink'><Link to="/motherboard">Mother Boards</Link></button>
-                    <button className='tablink'><Link to="/peripheral">Peripherals</Link></button>
+                <section className='shopnavlinks'>
+                    <button className='tablink'><Link to="/categories/cpu">CPUs</Link></button>
+                    <button className='tablink'><Link to="/categories/gpu">GPUs</Link></button>
+                    <button className='tablink'><Link to="/categories/motherboard">Mother Boards</Link></button>
+                    <button className='tablink'><Link to="/categories/peripheral">Peripherals</Link></button>
                 </section>
         </nav>
         </>

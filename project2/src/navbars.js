@@ -10,6 +10,9 @@ const Navbars = function(){
                 <section className='navlinks'>
                     <button className='tablink'><Link to="/home">Home</Link></button>
                     <button className='tablink'><Link to="/shop">Shop</Link></button>
+                    <button className='tablink'><Link to="/about">About</Link></button>
+                    <button className='tablink'><Link to="/cart">Cart</Link></button>
+
                 </section>
             </nav>
         </>
