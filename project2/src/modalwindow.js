@@ -1,7 +1,8 @@
 import React from "react"
 import './App.css'
 
-const Modalwindow = function({ visible, onClose, img, name, price, description } ){
+const Modalwindow = function({ onAddToCart, visible, onClose, img, name, price, description } ){
+    const [i, setI] = React.useState(1);
     if(!visible) return null;
 
     return(
@@ -12,13 +13,17 @@ const Modalwindow = function({ visible, onClose, img, name, price, description }
                     <p className="name">{name}</p>
                     <h3 className="closex" onClick={onClose}>X</h3>
                 </header>
-                <img className='image'src={img}/>
+                <img className='imagemodal'src={img}/>
                 <main className="modalmain">
-                    <p>{price}</p>
+                    <p>${price}</p>
                     <p>{description}</p>
                 </main>
+                <input type="number" value={i} onChange={(e) => setI(Number(e.target.value))} min={1}/>
+                    <button onClick={() => {
+                    onAddToCart({name, price: Number(price),image: img, quantity: i});onClose();}}>
+                        Add to Cart
+                    </button>
             </div>
-            <button>Add to Cart</button>
         </section>
         </>
     )

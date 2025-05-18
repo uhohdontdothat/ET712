@@ -4,7 +4,7 @@ import Card from '../card'
 import Product from '../cardcontent'
 import Shopnavbars from '../shopnavbars'
 
-const Peripheral = function(){
+const Peripheral = function({onAddToCart}){
     return(
         <>
         <header>
@@ -15,10 +15,10 @@ const Peripheral = function(){
             <Shopnavbars/>
         </div>
         <main className='products'>
-            <Card name='Mouse' price='$50'><Product name='Mouse' price='$50'/></Card>
-            <Card name='Keyboard' price='$75'><Product name='Keyboard' price='$75'/></Card>
-            <Card name='Monitor' price='$125'><Product name='Monitor' price='$125'/></Card>
-            <Card name='Headphones' price='$80'><Product name='Headphones' price='$80'/></Card>
+            <Card name='Mouse' price={50} description='words' onAddToCart={onAddToCart}><Product name='Mouse' price={50}/></Card>
+            <Card name='Keyboard' price={75} description='words' onAddToCart={onAddToCart}><Product name='Keyboard' price={75}/></Card>
+            <Card name='Monitor' price={125} description='words' onAddToCart={onAddToCart}><Product name='Monitor' price={125}/></Card>
+            <Card name='Headphones' price={80} description='words' onAddToCart={onAddToCart}><Product name='Headphones' price={80}/></Card>
         </main>
         </>
     )

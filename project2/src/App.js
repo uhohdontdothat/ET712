@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 // local files
 import Home from './home';
@@ -16,6 +16,18 @@ import Cart from './cart';
 // reference lab13 if there are issues
 
 function App() {
+const [cart, setCart] = useState([]);
+const handleAddToCart = (item) => {
+  const found = cart.find(i => i.name === item.name);
+  if (found) {
+    setCart(cart.map(i => 
+      i.name === item.name ? { ...i, quantity: i.quantity + 1 } : i
+    ));
+  } else {
+    setCart([...cart, item]);
+  }
+};
+
   return (
     <>
     <h1>Computer Parts Store (NAME WIP)</h1> 
@@ -30,12 +42,12 @@ function App() {
           <Route path='/home' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/cart' element={<Cart cart={cart} setCart={setCart}/>} />
           
-          <Route path='/shop/cpu' element={<CPU/>}/>
-          <Route path='/shop/gpu' element={<GPU/>}/>
-          <Route path='/shop/motherboard' element={<Motherboard/>}/>
-          <Route path='/shop/peripheral' element={<Peripheral/>}/>
+          <Route path='/shop/cpu' element={<CPU onAddToCart={handleAddToCart}/>}/>
+          <Route path='/shop/gpu' element={<GPU onAddToCart={handleAddToCart}/>}/>
+          <Route path='/shop/motherboard' element={<Motherboard onAddToCart={handleAddToCart}/>}/>
+          <Route path='/shop/peripheral' element={<Peripheral onAddToCart={handleAddToCart}/>}/>
         </Routes>
       </main>
       </BrowserRouter>

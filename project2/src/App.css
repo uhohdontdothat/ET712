@@ -71,8 +71,17 @@
   color: black;
 }
 .image{
-  height:40%;
-  width:40%;
+  height:150px;
+  width:150px;
   display: flex;
-  justify-content: center;
+}
+.imagemodal{
+  height:250px;
+  width:250px;
+  display: flex;
+}
+.imagecart{
+  height:100px;
+  width:100px;
+  display: flex;
 }

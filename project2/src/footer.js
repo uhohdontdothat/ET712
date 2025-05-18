@@ -4,7 +4,7 @@ import './App.css'
 const Footer = function(){
     return(
         <>
-            <p>footer</p>
+            <p>SITE CREATED BY HENRY PEREZ 2025</p>
         </>
     )
 }

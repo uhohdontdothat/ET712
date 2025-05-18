@@ -4,7 +4,8 @@ import './App.css'
 const About = function(){
     return(
         <>
-        <p>About</p>
+            <h1>About Us</h1>
+            
         </>
     )
 }
