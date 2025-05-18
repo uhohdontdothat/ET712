@@ -5,7 +5,7 @@ const Product = function(props){
     return(
         <>
             <section className="product">
-                {/*<img src={props.image}/>*/}
+                <img className='image' src={props.image}/>
                 <div className='productname'>
                     <p>{props.name}</p>
                 </div>

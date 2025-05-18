@@ -14,7 +14,7 @@ const GPU = function(){
         <div>
             <Shopnavbars/>
         </div>
-        <main>
+        <main className='products'>
             <Card name='gpu1' price='$1000'><Product name='gpu1' price='$1000'/></Card>
             <Card name='gpu2' price='$400'><Product name='gpu2' price='$400'/></Card>
             <Card name='gpu3' price='$350'><Product name='gpu3' price='$350'/></Card>

@@ -1,7 +1,7 @@
 import React from "react"
 import './App.css'
 
-const Modalwindow = function({ visible, onClose, name, price }, ){
+const Modalwindow = function({ visible, onClose, img, name, price, description } ){
     if(!visible) return null;
 
     return(
@@ -9,13 +9,16 @@ const Modalwindow = function({ visible, onClose, name, price }, ){
         <section className="modalwindow">
             <div className="window">
                 <header className="modalheader">
-                    <h3 onClick={onClose}>X</h3>
+                    <p className="name">{name}</p>
+                    <h3 className="closex" onClick={onClose}>X</h3>
                 </header>
+                <img className='image'src={img}/>
                 <main className="modalmain">
-                    <p>{name}</p>
                     <p>{price}</p>
+                    <p>{description}</p>
                 </main>
-            </div> 
+            </div>
+            <button>Add to Cart</button>
         </section>
         </>
     )

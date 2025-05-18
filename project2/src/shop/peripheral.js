@@ -14,7 +14,7 @@ const Peripheral = function(){
         <div>
             <Shopnavbars/>
         </div>
-        <main>
+        <main className='products'>
             <Card name='Mouse' price='$50'><Product name='Mouse' price='$50'/></Card>
             <Card name='Keyboard' price='$75'><Product name='Keyboard' price='$75'/></Card>
             <Card name='Monitor' price='$125'><Product name='Monitor' price='$125'/></Card>
