@@ -6,10 +6,10 @@ import Home from './home';
 import Shop from './shop';
 import Navbars from './navbars';
 import Footer from './footer';
-import CPU from './categories/cpu';
-import GPU from './categories/gpu';
-import Motherboard from './categories/motherboard';
-import Peripheral from './categories/peripheral';
+import CPU from './shop/cpu';
+import GPU from './shop/gpu';
+import Motherboard from './shop/motherboard';
+import Peripheral from './shop/peripheral';
 import About from './about';
 import Cart from './cart';
 
@@ -32,10 +32,10 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/cart' element={<Cart/>}/>
           
-          <Route path='/categories/cpu' element={<CPU/>}/>
-          <Route path='/categories/gpu' element={<GPU/>}/>
-          <Route path='/categories/motherboard' element={<Motherboard/>}/>
-          <Route path='/categories/peripheral' element={<Peripheral/>}/>
+          <Route path='/shop/cpu' element={<CPU/>}/>
+          <Route path='/shop/gpu' element={<GPU/>}/>
+          <Route path='/shop/motherboard' element={<Motherboard/>}/>
+          <Route path='/shop/peripheral' element={<Peripheral/>}/>
         </Routes>
       </main>
       </BrowserRouter>

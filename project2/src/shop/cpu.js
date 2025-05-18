@@ -15,10 +15,10 @@ const CPU = function(){
             <Shopnavbars/>
         </div>
         <main>
-            <Card><Product name='cpu1' price='$500'/></Card>
-            <Card><Product name='cpu2' price='$250'/></Card>
-            <Card><Product name='cpu3' price='$300'/></Card>
-            <Card><Product name='cpu4' price='$150'/></Card>
+            <Card name='cpu1' price='$500'><Product name='cpu1' price='$500'/></Card>
+            <Card name='cpu2' price='$250'><Product name='cpu2' price='$250'/></Card>
+            <Card name='cpu3' price='$300'><Product name='cpu3' price='$300'/></Card>
+            <Card name='cpu4' price='$150'><Product name='cpu4' price='$150'/></Card>
         </main>
         </>
     )

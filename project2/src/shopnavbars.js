@@ -8,10 +8,10 @@ const Shopnavbars = function(){
          <nav className='shopnavheader'>
             <section className='iconlink'></section>
                 <section className='shopnavlinks'>
-                    <button className='tablink'><Link to="/categories/cpu">CPUs</Link></button>
-                    <button className='tablink'><Link to="/categories/gpu">GPUs</Link></button>
-                    <button className='tablink'><Link to="/categories/motherboard">Mother Boards</Link></button>
-                    <button className='tablink'><Link to="/categories/peripheral">Peripherals</Link></button>
+                    <button className='tablink'><Link to="/shop/cpu">CPUs</Link></button>
+                    <button className='tablink'><Link to="/shop/gpu">GPUs</Link></button>
+                    <button className='tablink'><Link to="/shop/motherboard">Mother Boards</Link></button>
+                    <button className='tablink'><Link to="/shop/peripheral">Peripherals</Link></button>
                 </section>
         </nav>
         </>

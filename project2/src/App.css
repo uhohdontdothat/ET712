@@ -36,3 +36,28 @@
   font-size: 10px;
   text-align: center;
 }
+.modalwindow{
+    background-color: rgba(50,50,50,0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: block;
+}
+.window{
+    height: 80%;
+    width: 60%;
+    margin: 5% auto;
+    border-radius: 27px;
+    background-color: white;
+}
+.modalheader{
+  text-align: right;
+  padding: 0.5rem;
+}
+.modalmain{
+  font-style:normal;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
