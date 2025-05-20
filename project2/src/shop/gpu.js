@@ -8,8 +8,8 @@ const GPU = function({onAddToCart}){
     return(
         <>
         <header>
-            <h1>SHOP</h1>
-            <h2>GPU</h2>
+            <h1 className='title'>SHOP</h1>
+            <h2 className='checkit'>GPU</h2>
         </header>
         <div>
             <Shopnavbars/>

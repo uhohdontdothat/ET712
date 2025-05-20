@@ -10,8 +10,8 @@ const Modalwindow = function({ onAddToCart, visible, onClose, img, name, price, 
         <section className="modalwindow">
             <div className="window">
                 <header className="modalheader">
-                    <p className="name">{name}</p>
                     <h3 className="closex" onClick={onClose}>X</h3>
+                    <p className="name">{name}</p>
                 </header>
                 <img className='imagemodal'src={img}/>
                 <main className="modalmain">

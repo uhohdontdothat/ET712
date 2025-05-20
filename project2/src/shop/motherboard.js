@@ -8,8 +8,8 @@ const Motherboard = function({onAddToCart}){
     return(
         <>
         <header>
-            <h1>SHOP</h1>
-            <h2>Mother Boards</h2>
+            <h1 className='title'>SHOP</h1>
+            <h2 className='checkit'>Mother Boards</h2>
         </header>
         <div>
             <Shopnavbars/>

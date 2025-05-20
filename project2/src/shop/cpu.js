@@ -9,8 +9,8 @@ const CPU = function({onAddToCart}){
     return(
         <>
         <header>
-            <h1>SHOP</h1>
-            <h2>CPUs</h2>
+            <h1 className='title'>SHOP</h1>
+            <h2 className='checkit'>CPUs</h2>
         </header>
         <div>
             <Shopnavbars/>

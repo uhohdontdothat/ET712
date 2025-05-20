@@ -1,8 +1,56 @@
 .header{
   padding: 2rem;
+  background-color: navy;
+}
+.title{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2rem;
 }
 .home{
   font-size: 20px;
+  text-align: center;
+}
+.tablink{
+  padding: 0.75em;
+  margin: 0.5rem;
+  font-size: 15px;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 10%;
+}
+.backgrounddisplay{
+  background: linear-gradient(rgba(19, 3, 143, 0.5)),url(./images/placeholder.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30rem;
+  padding-bottom: 30rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.shoplink{
+  padding: 0.75rem;
+  margin: 0.5rem;
+  font-size: 15px;
+  background-color: white;
+  border: none;
+  border-radius: 5%;
+  position: absolute;
+  bottom:-30%;
+  left: 20%;
+}
+.checkit{
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.shopnavlinks{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 .cardcontainer{
   width: 300px;
@@ -12,12 +60,19 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-color: snow;
+}
+.cardcontainer:hover{
+  box-shadow: 0.5px 0.5px 2.5px gray;
+  cursor: pointer;
 }
 .card{
-  width: 300px;
+  width: 150px;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
+  justify-content: center;
+  align-content: center;
 }
 .product{
   font-size: 1.2em;
@@ -33,12 +88,13 @@
   text-align: center;
 }
 .cardfooter{
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 .products{
   display: flex;
   margin: 20px;
+  justify-content: center;
 }
 
 .modalwindow{
@@ -63,25 +119,45 @@
 }
 .closex{
   text-align: right;
-  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 30px;
+}
+.closex:hover{
+  cursor:pointer;
 }
 .modalmain{
   font-style:normal;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Arial, Helvetica, sans-serif;
   color: black;
+  padding: 1rem;
+  text-align: center;
 }
 .image{
   height:150px;
   width:150px;
   display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .imagemodal{
   height:250px;
   width:250px;
   display: flex;
+  left: 37.5%;
+  position: relative;
 }
 .imagecart{
   height:100px;
   width:100px;
   display: flex;
+}
+.name{
+  margin-top: 0.5em;
+  font-size: 25px;
+}
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }

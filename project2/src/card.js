@@ -15,8 +15,8 @@ const Card = function(props){
     };
     return(
         <>
-            <main className='cardcontainer'>
-                <section className='card' onClick={handleCardClick}>
+            <main className='cardcontainer' onClick={handleCardClick}>
+                <section className='card'>
                     {props.children}
                     <div className='cardfooter'>
                         <p>View</p>

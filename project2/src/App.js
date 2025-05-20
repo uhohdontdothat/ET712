@@ -30,10 +30,9 @@ const handleAddToCart = (item) => {
 
   return (
     <>
-    <h1>Computer Parts Store (NAME WIP)</h1> 
-
       <BrowserRouter>
-      <header>
+      <header className='header'>
+        <h1>Computer Parts Store (NAME WIP)</h1> 
         <Navbars/>
       </header>
       <main>
