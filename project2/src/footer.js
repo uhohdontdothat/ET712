@@ -5,7 +5,7 @@ const Footer = function(){
     return(
         <>
         <footer className='footer'>
-            <p>SITE CREATED BY HENRY PEREZ 2025</p>
+            <h3>SITE CREATED BY HENRY PEREZ 2025</h3>
         </footer> 
         </>
     )

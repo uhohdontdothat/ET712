@@ -1,6 +1,9 @@
 .header{
-  padding: 0.75rem;
   background-color: rgb(28, 0, 128);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 .navlinks{
   justify-content:right;
@@ -134,7 +137,7 @@
 }
 .closex{
   text-align: right;
-  margin: 1rem;
+  margin: 0.75rem;
   font-size: 30px;
 }
 .closex:hover{
@@ -144,7 +147,8 @@
   font-style:normal;
   font-family:Arial, Helvetica, sans-serif;
   color: black;
-  padding: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: center;
 }
 .input{
@@ -159,8 +163,8 @@
   justify-content: center;
 }
 .imagemodal{
-  height:250px;
-  width:250px;
+  height:200px;
+  width:200px;
   display: flex;
   left: 37.5%;
   position: relative;
@@ -173,15 +177,56 @@
 .modalfooter{
   align-content: center;
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .name{
-  margin-top: 0.5em;
-  font-size: 25px;
+  margin-top: 0.25em;
+  font-size: 20px;
+}
+.aboutus{
+  padding: 1rem 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(15, 15, 15);
+  text-align: center;
+  background-color: snow;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.buttoncart{
+  padding: 0.75em;
+  margin: 0.5rem;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 7%;
+}
+.buttoncart:hover{
+  color: rgb(85, 22, 114);
+  cursor:pointer;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 30px;   
+  margin-left: auto;    
+  width: fit-content;  
 }
 .footer{
   background-color: black;
   color: white;
-  text-align: center;
   padding: 1rem;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
 }

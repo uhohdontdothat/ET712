@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Route, Routes, BrowserRouter, Link } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 // local files
 import Home from './home';
 import Shop from './shop';
@@ -34,9 +34,11 @@ const handleAddToCart = (item) => {
       <BrowserRouter>
       <header className='header'>
         <a href='./home'>
-          <img  className='sitelogo' src={sitelogo}/> 
+          <img  className='sitelogo' src={sitelogo} alt='Site logo'/> 
         </a>
-        <Navbars/>
+        <div className='headernavbars'>
+          <Navbars/>
+        </div>
       </header>
       <main>
         <Routes>
