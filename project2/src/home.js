@@ -4,7 +4,6 @@ import './App.css'
 
 import Card from './card'
 import Product from './cardcontent'
-import placeholder from './images/placeholder.png'
 
 const Home = function(){
     return(
@@ -13,7 +12,7 @@ const Home = function(){
             <h3 className='title'>The parts you need, All in 1 place!</h3>
         </header>
         <div className='backgrounddisplay'>
-            <button className='shoplink'><Link to="/shop">Shop Now!</Link></button>
+            <button><Link className='shoplink' to="/shop">Shop Now!</Link></button>
         </div>
         
         <div className='checkit'>

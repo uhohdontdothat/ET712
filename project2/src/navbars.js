@@ -8,10 +8,10 @@ const Navbars = function(){
             <nav className='navheader'>
                 <section className='iconlink'></section>
                 <section className='navlinks'>
-                    <button className='tablink'><Link to="/home">Home</Link></button>
-                    <button className='tablink'><Link to="/shop">Shop</Link></button>
-                    <button className='tablink'><Link to="/about">About</Link></button>
-                    <button className='tablink'><Link to="/cart">Cart</Link></button>
+                    <button className='tablink'><Link className='tablink' to="/home">Home</Link></button>
+                    <button className='tablink'><Link className='tablink' to="/shop">Shop</Link></button>
+                    <button className='tablink'><Link className='tablink' to="/about">About</Link></button>
+                    <button className='tablink'><Link className='tablink' to="/cart">Cart</Link></button>
                 </section>
             </nav>
         </>

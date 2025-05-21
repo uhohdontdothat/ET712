@@ -18,7 +18,7 @@ const Modalwindow = function({ onAddToCart, visible, onClose, img, name, price, 
                     <p>${price}</p>
                     <p>{description}</p>
                 </main>
-                <input type="number" value={i} onChange={(e) => setI(Number(e.target.value))} min={1}/>
+                <input className="input" type="number" value={i} onChange={(e) => setI(Number(e.target.value))} min={1}/>
                     <button onClick={() => {
                     onAddToCart({name, price: Number(price),image: img, quantity: i});onClose();}}>
                         Add to Cart
