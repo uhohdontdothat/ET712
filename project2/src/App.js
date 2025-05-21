@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter, Link } from 'react-router-dom';
 // local files
 import Home from './home';
 import Shop from './shop';
@@ -12,6 +12,7 @@ import Motherboard from './shop/motherboard';
 import Peripheral from './shop/peripheral';
 import About from './about';
 import Cart from './cart';
+import sitelogo from './images/Fluffy_site_logo.png'
 
 // reference lab13 if there are issues
 
@@ -32,13 +33,15 @@ const handleAddToCart = (item) => {
     <>
       <BrowserRouter>
       <header className='header'>
-        <h1>Computer Parts Store (NAME WIP)</h1> 
+        <a href='./home'>
+          <img  className='sitelogo' src={sitelogo}/> 
+        </a>
         <Navbars/>
       </header>
       <main>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/home' element={<Home onAddToCart={handleAddToCart}/>}/>
           <Route path='/shop' element={<Shop/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/cart' element={<Cart cart={cart} setCart={setCart}/>} />

@@ -18,9 +18,6 @@ const Card = function(props){
             <main className='cardcontainer' onClick={handleCardClick}>
                 <section className='card'>
                     {props.children}
-                    <div className='cardfooter'>
-                        <p>View</p>
-                    </div>
                 </section>
             </main>
             <Modalwindow visible={showModal} onClose={handleClose} img={props.image} name={props.name} price={props.price} description={props.description} onAddToCart={props.onAddToCart}/>

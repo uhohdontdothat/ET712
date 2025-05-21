@@ -1,11 +1,19 @@
 .header{
-  padding: 1.5rem;
+  padding: 0.75rem;
   background-color: rgb(28, 0, 128);
+}
+.navlinks{
+  justify-content:right;
+  display: flex;
 }
 .title{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 2rem;
+}
+.sitelogo{
+  height: 140px;
+  width: 200px;
 }
 .home{
   font-size: 20px;
@@ -98,10 +106,6 @@
   font-size: 15px;
   text-align: center;
 }
-.cardfooter{
-  font-size: 15px;
-  text-align: center;
-}
 .products{
   display: flex;
   margin: 20px;
@@ -118,7 +122,7 @@
     display: block;
 }
 .window{
-    height: 80%;
+    height: 85%;
     width: 60%;
     margin: 5% auto;
     border-radius: 27px;
@@ -165,6 +169,11 @@
   height:100px;
   width:100px;
   display: flex;
+}
+.modalfooter{
+  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 .name{
   margin-top: 0.5em;
